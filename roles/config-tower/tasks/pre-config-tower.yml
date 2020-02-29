@@ -10,9 +10,8 @@
 
 - name: Copy opentlc ssh keys
   copy:
-    src: "{{path_to_opentlc_key}}"
+    src: /root/.ssh/id_rsa
     dest: /root/secret.pem
-
 
 - name: Copy inventory vars
   copy:
