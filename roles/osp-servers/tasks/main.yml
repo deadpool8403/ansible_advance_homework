@@ -18,7 +18,7 @@
       cat /tmp/openstack.pub >> /home/cloud-user/.ssh/authorized_keys
       curl -o /tmp/internal.repo http://www.opentlc.com/download/ansible_bootcamp/repo/internal.repo
       cp /tmp/internal.repo /etc/yum.repos.d/internal.repo
-    register: instancedeploy
+  register: instancedeploy
 
 - name: Add floating IP to Servers
   os_floating_ip:
@@ -29,7 +29,7 @@
     network: ext_network
     wait: true
     timeout: 300
-    register: instancefloatingip
+  register: instancefloatingip
 
 - name: Show "{{ instancedeploy }}" public ip
   debug: var=instancefloatingip.floating_ip.floating_ip_address   
