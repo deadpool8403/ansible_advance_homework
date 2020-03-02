@@ -24,8 +24,8 @@
   os_floating_ip:
     cloud: ospcloud
     state: present
-    resuse: yes
-    server: "{{instance_name }}"
+    reuse: yes
+    server: "{{ instance_name }}"
     network: ext_network
     wait: true
     timeout: 300
