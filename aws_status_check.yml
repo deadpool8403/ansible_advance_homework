@@ -1,4 +1,4 @@
-- hosts: tag_instance_filter_three_tier_app_d.johnson
+- hosts: tag_instance_filter_three_tier_app_d_johnson_csdef_com
   gather_facts: false
   tasks:
   - name: Check the instances status
