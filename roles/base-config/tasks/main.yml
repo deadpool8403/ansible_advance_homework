@@ -4,5 +4,5 @@
   copy:
     src: open_three-tier-app.repo
     dest: /etc/yum.repos.d/open_three-tier-app.repo
-    remote_src: yes
+    remote_src: no
     mode: 0644
